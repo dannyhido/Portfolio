@@ -300,19 +300,25 @@ section {
 /* About Section */
 .about {
     background-color: var(--bg-secondary);
+    position: relative;
+    z-index: 1;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .about-text p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.8;
+    position: relative;
+    z-index: 2;
 }
 
 .about-stats {
