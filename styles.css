@@ -124,7 +124,8 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 1;
 }
 
 .hero::before {
@@ -354,6 +355,17 @@ section {
 }
 
 /* Projects Section */
+
+.projects {
+    position: relative;      /* required for z-index */
+    z-index: 2;              /* sit above hero */
+    margin-top: -6rem;       /* pull it over hero */
+    padding-top: 6rem;       /* spacing inside section */
+    background: var(--bg-primary);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
