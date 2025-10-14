@@ -359,11 +359,10 @@ section {
 .projects {
     position: relative;      /* required for z-index */
     z-index: 2;              /* sit above hero */
-    margin-top: -6rem;       /* pull it over hero */
+    margin-top: 0rem;       /* pull it over hero */
     padding-top: 6rem;       /* spacing inside section */
     background: var(--bg-primary);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
 }
 
 .projects-grid {
